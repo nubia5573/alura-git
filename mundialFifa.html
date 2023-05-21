@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    function saltarLinea() {
+        document.write("<br><br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea()
+    }
+    var mundial = 1982;
+    var hasta = parseInt(prompt("Ingrese el año limite para calcular los mundiales "))
+    while (mundial<=hasta) {
+        imprimir("Hubo un mundial de la FIFA en el año " + mundial);
+        mundial=mundial+4;
+    }
+    
+    
+
+</script>

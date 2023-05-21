@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    function saltarLinea() {
+        document.write("<br><br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea()
+    }
+    imprimir("WHILE");
+    var inicio =1;
+    var tabla = parseInt(prompt("Ingrese la tabla que quiere ver "))
+    var hasta = parseInt(prompt("Ingrese hasta que numero quiere multiplicar "))
+    while (inicio<=hasta) {
+        imprimir(tabla + " X "+ inicio + " = " + (tabla*inicio));
+        inicio=inicio+1;
+    }
+    saltarLinea();
+
+    imprimir("FOR");
+    inicio=1;
+    for (inicio; inicio<=hasta; inicio++) {
+
+        imprimir(tabla + " X "+ inicio + " = " + (tabla*inicio));
+        
+    }
+</script>

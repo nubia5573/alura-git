@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+Calcular la media de las edades de una familia
+<script>
+    function saltarLinea() {
+        document.write("<br><br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea()
+    }
+    saltarLinea()
+    var inicio = 1;
+    while (inicio<=100) {
+        if (inicio % 2 == 0) {
+            imprimir(inicio);
+        }
+        inicio = inicio +1;
+    }
+    imprimir("FIN")
+</script>
